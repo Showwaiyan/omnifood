@@ -58,23 +58,159 @@ Medium: 11px
 
 /* Global Reset */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* Variable */
 :root {
-
+  --primary-color: #e67e22;
+  --tint-color: #fdf2e9;
+  --shade-color: #cf711f;
 }
 
 /* Typography */
 html {
-    font-family: sans-serif;
-
+  font-family: "Rubik", sans-serif;
+  font-size: 62.5%;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
 }
 
 /* Component */
 body {
+}
 
+.section-hero {
+  /* Layout */
+  padding: 9.6rem 0;
+  /* Typography */
+  /* Style */
+  background-color: var(--tint-color);
+}
+
+.hero {
+  /* Layout */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+
+  max-width: 130rem;
+  margin: 0 auto;
+  /* Typography */
+
+  /* Style */
+}
+
+.heading-primary {
+  /* Layout */
+  margin-bottom: 3.2rem;
+
+  /* Typography */
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  /* Style */
+}
+
+.hero-description {
+  /* Layout */
+  margin-bottom: 4.8rem;
+
+  /* Typography */
+  font-size: 2rem;
+  line-height: 1.6;
+  /* Style */
+}
+
+.btn:link,
+.btn:visited {
+  /* Layout */
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  /* Typography */
+  font-size: 2rem;
+  text-decoration: none;
+
+  /* Style */
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+.btn--full:link,
+.btn--full:visited {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+.btn--full:hover {
+  background-color: var(--shade-color);
+}
+.btn--outline:hover {
+  background-color: var(--tint-color);
+  color: #555;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.delivered-meals {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+
+  /* Typography */
+  /* Style */
+}
+
+.delivered-imgs {
+  /* Layout */
+  display: flex;
+
+  /* Typography */
+  /* Style */
+}
+
+.delivered-imgs img {
+  /* Layout */
+  height: 4.8rem;
+  width: 4.8rem;
+  margin-right: -1.6rem;
+
+  /* Typography */
+  /* Style */
+  border-radius: 50%;
+  border: 3px solid var(--tint-color);
+}
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  /* Layout */
+  /* Typography */
+  font-size: 1.8rem;
+  font-weight: 600;
+  /* Style */
+}
+
+.delivered-text span {
+  color: var(--shade-color);
+  font-weight: 700;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
 }
