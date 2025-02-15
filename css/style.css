@@ -90,21 +90,7 @@ body {
   /* Style */
   background-color: var(--tint-color);
 }
-
-.hero {
-  /* Layout */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
-
-  max-width: 130rem;
-  margin: 0 auto;
-  /* Typography */
-
-  /* Style */
-}
-
+/* General Reusesable Components */
 .heading-primary {
   /* Layout */
   margin-bottom: 3.2rem;
@@ -115,16 +101,6 @@ body {
   line-height: 1.05;
   color: #333;
   letter-spacing: -0.5px;
-  /* Style */
-}
-
-.hero-description {
-  /* Layout */
-  margin-bottom: 4.8rem;
-
-  /* Typography */
-  font-size: 2rem;
-  line-height: 1.6;
   /* Style */
 }
 
@@ -158,6 +134,37 @@ body {
   background-color: var(--tint-color);
   color: #555;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+/* Header */
+
+/* Hero */
+.hero {
+  /* Layout */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+
+  max-width: 130rem;
+  margin: 0 auto;
+  /* Typography */
+
+  /* Style */
+}
+
+.hero-description {
+  /* Layout */
+  margin-bottom: 4.8rem;
+
+  /* Typography */
+  font-size: 2rem;
+  line-height: 1.6;
+  /* Style */
 }
 
 .delivered-meals {
@@ -209,8 +216,4 @@ body {
 
 .hero-img {
   width: 100%;
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
 }
