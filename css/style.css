@@ -58,215 +58,218 @@ Medium: 11px
 
 /* Global Reset */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 /* Variable */
 :root {
-  --primary-color: #e67e22;
-  --tint-color: #fdf2e9;
-  --shade-color: #cf711f;
+	--primary-color: #e67e22;
+	--tint-color: #fdf2e9;
+	--shade-color: #cf711f;
 }
 
 /* Typography */
 html {
-  font-family: "Rubik", sans-serif;
-  font-size: 62.5%;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
+	font-family: "Rubik", sans-serif;
+	font-size: 62.5%;
+	line-height: 1;
+	font-weight: 400;
+	color: #555;
 }
 
 /* Component */
-body {
-}
-
-/* General Reusesable Components */
-.heading-primary {
-  /* Layout */
-  margin-bottom: 3.2rem;
-
-  /* Typography */
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
-  /* Style */
-}
-
-.btn:link,
-.btn:visited {
-  /* Layout */
-  display: inline-block;
-  padding: 1.6rem 3.2rem;
-  /* Typography */
-  font-size: 2rem;
-  text-decoration: none;
-
-  /* Style */
-  border-radius: 9px;
-  transition: all 0.3s;
-}
-.btn--full:link,
-.btn--full:visited {
-  background-color: var(--primary-color);
-  color: #fff;
-}
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-.btn--full:hover {
-  background-color: var(--shade-color);
-}
-.btn--outline:hover {
-  background-color: var(--tint-color);
-  color: #555;
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
 
 /* Header */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--tint-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--tint-color);
 
-  /* To make sticky nav */
-  height: 9.6rem;
+	/* To make sticky nav */
+	height: 9.6rem;
 
-  padding: 0 4.8rem;
+	padding: 0 4.8rem;
 }
 
 .logo {
-  height: 2.2rem;
+	height: 2.2rem;
 }
 
 .main-nav-list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 3.2rem;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 3.2rem;
 }
 
 .main-nav-list li a:link,
 .main-nav-list li a:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: #555;
-  font-weight: 500;
-  font-size: 1.8rem;
+	display: inline-block;
+	text-decoration: none;
+	color: #555;
+	font-weight: 500;
+	font-size: 1.8rem;
 
-  transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .main-nav-list li a.nav-cta:link,
 .main-nav-list li a.nav-cta:visited {
-  padding: 1.2rem 2.4rem;
-  border-radius: 9px;
-  color: var(--tint-color);
-  background-color: var(--primary-color);
+	padding: 1.2rem 2.4rem;
+	border-radius: 9px;
+	color: var(--tint-color);
+	background-color: var(--primary-color);
 }
 
 .main-nav-list li a:hover,
 .main-nav-list li a:active {
-  color: var(--primary-color);
+	color: var(--primary-color);
 }
 .main-nav-list li a.nav-cta:hover,
 .main-nav-list li a.nav-cta:active {
-  background-color: var(--shade-color);
+	background-color: var(--shade-color);
 }
 
 /* Hero */
 .section-hero {
-  /* Layout */
-  padding: 4.8rem 0 9.6rem 0;
-  /* Typography */
-  /* Style */
-  background-color: var(--tint-color);
+	/* Layout */
+	padding: 4.8rem 0 9.6rem 0;
+	/* Typography */
+	/* Style */
+	background-color: var(--tint-color);
 }
 
 .hero {
-  /* Layout */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
+	/* Layout */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 9.6rem;
+	align-items: center;
 
-  max-width: 130rem;
-  margin: 0 auto;
+	max-width: 130rem;
+	margin: 0 auto;
 
-  padding: 0 3.2rem;
-  /* Typography */
+	padding: 0 3.2rem;
+	/* Typography */
 
-  /* Style */
+	/* Style */
 }
 
 .hero-description {
-  /* Layout */
-  margin-bottom: 4.8rem;
+	/* Layout */
+	margin-bottom: 4.8rem;
 
-  /* Typography */
-  font-size: 2rem;
-  line-height: 1.6;
-  /* Style */
+	/* Typography */
+	font-size: 2rem;
+	line-height: 1.6;
+	/* Style */
 }
 
 .delivered-meals {
-  /* Layout */
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  margin-top: 8rem;
+	/* Layout */
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+	margin-top: 8rem;
 
-  /* Typography */
-  /* Style */
+	/* Typography */
+	/* Style */
 }
 
 .delivered-imgs {
-  /* Layout */
-  display: flex;
+	/* Layout */
+	display: flex;
 
-  /* Typography */
-  /* Style */
+	/* Typography */
+	/* Style */
 }
 
 .delivered-imgs img {
-  /* Layout */
-  height: 4.8rem;
-  width: 4.8rem;
-  margin-right: -1.6rem;
+	/* Layout */
+	height: 4.8rem;
+	width: 4.8rem;
+	margin-right: -1.6rem;
 
-  /* Typography */
-  /* Style */
-  border-radius: 50%;
-  border: 3px solid var(--tint-color);
+	/* Typography */
+	/* Style */
+	border-radius: 50%;
+	border: 3px solid var(--tint-color);
 }
 .delivered-imgs img:last-child {
-  margin: 0;
+	margin: 0;
 }
 
 .delivered-text {
-  /* Layout */
-  /* Typography */
-  font-size: 1.8rem;
-  font-weight: 600;
-  /* Style */
+	/* Layout */
+	/* Typography */
+	font-size: 1.8rem;
+	font-weight: 600;
+	/* Style */
 }
 
 .delivered-text span {
-  color: var(--shade-color);
-  font-weight: 700;
+	color: var(--shade-color);
+	font-weight: 700;
 }
 
 .hero-img {
-  width: 100%;
+	width: 100%;
+}
+
+/* How it works Section */
+.section-how {
+	padding: 9.6rem 0;
+}
+
+.step-text-box {
+	align-self: center;
+}
+.step-number {
+	font-size: 8.6rem;
+	font-weight: 600;
+	color: #ddd;
+	margin-bottom: 1.2rem;
+}
+
+.step-description {
+	font-size: 2rem;
+	line-height: 1.8;
+}
+
+.step-img-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.step-img-box img {
+	width: 35%;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+	content: "";
+	display: block;
+
+	border-radius: 50%;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+.step-img-box::before {
+	width: 60%;
+	padding-bottom: 60%;
+	background-color: var(--tint-color);
+}
+.step-img-box::after {
+	width: 45%;
+	padding-bottom: 45%;
+	background-color: #fae5d3;
 }
