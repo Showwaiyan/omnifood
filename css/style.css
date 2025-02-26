@@ -77,9 +77,14 @@ html {
 	line-height: 1;
 	font-weight: 400;
 	color: #555;
+
+	overflow-x: hidden;
 }
 
 /* Component */
+body {
+	overflow-x: hidden;
+}
 
 /* Header */
 .header {
@@ -92,6 +97,8 @@ html {
 	height: 9.6rem;
 
 	padding: 0 4.8rem;
+
+	position: relative;
 }
 
 .logo {
@@ -131,6 +138,23 @@ html {
 .main-nav-list li a.nav-cta:hover,
 .main-nav-list li a.nav-cta:active {
 	background-color: var(--shade-color);
+}
+
+.btn-mobile-nav {
+	border: none;
+	background-color: none;
+	cursor: pointer;
+
+	display: none;
+}
+.icon-mobile-nav {
+	height: 4.8rem;
+	width: 4.8rem;
+	color: #333;
+	background-color: transparent;
+}
+.icon-mobile-nav[name="close-outline"] {
+	display: none;
 }
 
 /* Hero */
