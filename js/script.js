@@ -5,6 +5,24 @@ document.querySelector(".btn-mobile-nav").addEventListener("click", (e) => {
 	document.querySelector(".header").classList.toggle("nav-open");
 });
 
+// smooth scrolling
+document.querySelectorAll("a:link").forEach((link) => {
+	link.addEventListener("click", (e) => {
+		e.preventDefault();
+
+		const href = link.getAttribute("href");
+
+		if (href === "#")
+			window.scrollTo({
+				top: 0,
+				behavior: "smooth",
+			});
+		else {
+			document.querySelector(href).scrollIntoView({ behavior: "smooth" });
+		}
+	});
+});
+
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
 	var flex = document.createElement("div");
