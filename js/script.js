@@ -20,6 +20,7 @@ document.querySelectorAll("a:link").forEach((link) => {
 		else {
 			document.querySelector(href).scrollIntoView({ behavior: "smooth" });
 		}
+		document.querySelector(".header").classList.remove(".nav-open");
 	});
 });
 
