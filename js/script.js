@@ -20,7 +20,7 @@ document.querySelectorAll("a:link").forEach((link) => {
 		else {
 			document.querySelector(href).scrollIntoView({ behavior: "smooth" });
 		}
-		document.querySelector(".header").classList.remove(".nav-open");
+		document.querySelector(".header").classList.remove("nav-open");
 	});
 });
 
@@ -28,7 +28,12 @@ document.querySelectorAll("a:link").forEach((link) => {
 const obs = new IntersectionObserver(
 	function (entries) {
 		const ent = entries[0];
-		if (!ent.isIntersecting) {
+		if (
+			!ent.isIntersecting &&
+			(window.matchMedia("(max-width: 59em)") ||
+				window.matchMedia("(max-width: 44em)") ||
+				window.matchMedia("(max-width: 34em)"))
+		) {
 			document.querySelector(".header").classList.add("sticky");
 			document.querySelector(".section-hero").style.marginTop = "9.6rem";
 		} else {
