@@ -24,6 +24,26 @@ document.querySelectorAll("a:link").forEach((link) => {
 	});
 });
 
+// Sticky Nav
+const obs = new IntersectionObserver(
+	function (entries) {
+		const ent = entries[0];
+		if (!ent.isIntersecting) {
+			document.querySelector(".header").classList.add("sticky");
+			document.querySelector(".section-hero").style.marginTop = "9.6rem";
+		} else {
+			document.querySelector(".header").classList.remove("sticky");
+			document.querySelector(".section-hero").style.marginTop = "0";
+		}
+	},
+	{
+		root: null,
+		threshold: 0,
+		rootMargin: "-80px",
+	}
+);
+obs.observe(document.querySelector(".section-hero"));
+
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
 	var flex = document.createElement("div");
